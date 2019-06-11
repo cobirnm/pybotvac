@@ -53,7 +53,7 @@ class Robot:
         :return: server response
         """
 
-        cert_path = os.path.join(os.path.dirname(__file__), 'cert', 'neatocloud.com.crt')
+        cert_path = false
         response = requests.post(self._url,
                                  json=json,
                                  verify=cert_path,
