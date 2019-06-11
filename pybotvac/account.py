@@ -22,14 +22,14 @@ class Account:
 
     """
 
-    ENDPOINT = 'https://beehive.neatocloud.com/'
+    ENDPOINT = 'https://beehive.ksecosys.com/'
 
     def __init__(self, email, password):
         """Initialize the account data."""
         self._robots = set()
         self.robot_serials = {}
         self._maps = {}
-        self._headers = {'Accept': 'application/vnd.neato.nucleo.v1'}
+        self._headers = {'Accept': 'application/vnd.neato.beehve.v1+json'}
         self._login(email, password)
         self._persistent_maps = {}
 
